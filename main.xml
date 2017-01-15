@@ -1,0 +1,28 @@
+<module name="app" dep="q ngRoute">
+    <controller name="HomeCtrl" dep="scope rootScope">
+        <function name="action" dep="x y"></function>
+        <var name="page_name" type="str"></var>
+        <var name="userdata" type="pojo"></var>
+        <function name="another_action" dep="args"></function>
+        <var name="age" type="int"></var>
+        <var name="cars" type="pojo"></var>
+    </controller>
+    <controller name="LoginCtrl" dep="scope rootScope">
+        <function name="login" dep="username password"></function>
+        <var name="returned_data" type="pojo"></var>
+        <function name="signup" dep="username password"></function>
+        <var name="registered" type="int"></var>
+    </controller>
+    <factory name="DatabaseFact" dep="http">
+        <function name="connect" dep="user pass db"></function>
+        <var name="status" type="str"></var>
+        <function name="disconnect" dep="w z"></function>
+    </factory>
+    <factory name="UserFact" dep="http">
+        <function name="change_name" dep="new_name"></function>
+        <var name="username" type="str"></var>
+        <var name="age" type="int"></var>
+        <function name="deleteUser" dep="uid"></function>
+        <var name="uid" type="str"></var>
+    </factory>
+</module>
